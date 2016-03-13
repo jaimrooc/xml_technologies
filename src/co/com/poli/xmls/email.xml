@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--Validacion externa [recomendada]--> 
+<!DOCTYPE root SYSTEM "email.dtd">
+
+<!-- Validacion interna [No recomendada]
+<!DOCTYPE root [
+<!ELEMENT root (email)> 
+<!ELEMENT email (head, body)>
+<!ELEMENT head (from, to, subject)>
+<!ELEMENT from (name, address)>
+<!ELEMENT to (name, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+]>-->
+<root>
+    <email>
+        <head>
+            <from>
+                <name>Michael Maher</name>
+                <address id="L1" pais="RUSIA" ciudad="">michaelmaher@cs.gu.edu.co</address>
+            </from>
+            <to>
+                <name>Gigoris Antoniou</name>
+                <address id="L2" pais="COLOMBIA" ciudad="">grigoris@cs.unibremen.de</address>
+            </to>
+            <subject>Where is your draft?</subject>
+        </head>
+        <body>asdfafasdfdsfas</body>
+    </email>
+</root>
+
+<!--<?xml version="1.0" encoding="UTF-8"?> Modo: Schema 
+<root xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xs:noNamespaceSchemaLocation="email.xsd">
+    <email usuario="">
+        <body></body>
+        <head></head>
+    </email>
+</root>-->

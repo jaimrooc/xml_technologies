@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE aerolinea SYSTEM "aerolinea.dtd">
+
+<aerolinea>
+    <viaje nombreempresa="EMPRESA1" fecha="12-02-2014">
+        <datosVuelo nombreTrayecto="Colombia-Usa" origen="Colombia" destino="Usa">
+            <!--<tiempoDuracion horaSalida="04:00" horaLlegada="10:00"></tiempoDuracion>-->             
+            <escalas codigo="C1" ciudad="Mexico" hora="06:23"></escalas>
+        </datosVuelo>
+        <datosAvion referencia="C20125" nombreCapitan="JARO" numeroPasajeros="30">
+            <observacion>
+            </observacion>
+        </datosAvion>
+    </viaje>
+</aerolinea>

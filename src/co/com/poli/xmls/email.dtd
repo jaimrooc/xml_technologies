@@ -1,0 +1,23 @@
+<!-- NOTAS -->
+<!-- lo que va entre parentesis son los hijos -->
+<!-- se debe respetar el orden de los hijos (izquierda a derecha) -->
+<!-- #PCDATA elemento final, no tendra mas estructura XML dentro de si -->
+
+<!ELEMENT root (email)> 
+<!ELEMENT email (head,body)>
+<!ELEMENT head (from, to, subject)>
+<!ELEMENT from (name, address)>
+<!ELEMENT to (name, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+
+<!-- #REQUIRED debe ser obligatorio -->
+<!-- #IMPLIED no es obligatorio -->
+<!--  --> 
+<!-- CDATA texto tipo cadena -->
+<!-- ID debe ser unico en todo el documento y dene ser caracter y numero -->
+<!ATTLIST address pais (COLOMBIA|BRASIL|RUSIA) #REQUIRED>
+<!ATTLIST address ciudad CDATA #IMPLIED>
+<!ATTLIST address id ID #REQUIRED>
